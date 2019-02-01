@@ -1,9 +1,14 @@
 // Initial variables
 var correctGuessScore = 0;
+console.log(correctGuessScore)
+
 var guessesRemaining = 5;
 
 // Play Again Button hidden initially
 document.getElementById("playAgainButton").style.display = 'none';
+
+// Question
+document.getElementById("question").innerHTML = 'Who sang Like a Virgin?';
 
 // This function begins the game when 
 // the user presses a key on their keyboard
@@ -17,9 +22,14 @@ document.onkeyup = function(userKeyStroke){
         document.getElementById("letter1").innerHTML = letterM;
         console.log('user typed m');
         correctGuessScore++;
+        console.log(correctGuessScore);
+
         if (correctGuessScore === 5){
-            var winText = 'You Win!'
-            document.getElementById("youWinText").innerHTML = winText
+            document.getElementById("numGuessRemainText").style.display = 'none';
+            document.getElementById("userGuessRemain").style.display = 'none';
+
+            var winText = 'You Win!';
+            document.getElementById("youWinText").innerHTML = winText;
             document.getElementById("playAgainButton").style.display = 'block';
         }
     }
@@ -30,9 +40,14 @@ document.onkeyup = function(userKeyStroke){
         document.getElementById("letter7").innerHTML = letterA;
         console.log('user typed a');
         correctGuessScore++;
+        console.log(correctGuessScore)
+
         if (correctGuessScore === 5){
-            var winText = 'You Win!'
-            document.getElementById("youWinText").innerHTML = winText
+            document.getElementById("numGuessRemainText").style.display = 'none';
+            document.getElementById("userGuessRemain").style.display = 'none';
+
+            var winText = 'You Win!';
+            document.getElementById("youWinText").innerHTML = winText;
             document.getElementById("playAgainButton").style.display = 'block';
         }
     }
@@ -42,9 +57,14 @@ document.onkeyup = function(userKeyStroke){
         document.getElementById("letter3").innerHTML = letterD;
         console.log('user typed d');
         correctGuessScore++;
+        console.log(correctGuessScore)
+
         if (correctGuessScore === 5){
-            var winText = 'You Win!'
-            document.getElementById("youWinText").innerHTML = winText
+            document.getElementById("numGuessRemainText").style.display = 'none';
+            document.getElementById("userGuessRemain").style.display = 'none';
+
+            var winText = 'You Win!';
+            document.getElementById("youWinText").innerHTML = winText;
             document.getElementById("playAgainButton").style.display = 'block';
         }
     }
@@ -54,9 +74,14 @@ document.onkeyup = function(userKeyStroke){
         document.getElementById("letter4").innerHTML = letterO;
         console.log('user typed o');
         correctGuessScore++;
+        console.log(correctGuessScore)
+
         if (correctGuessScore === 5){
-            var winText = 'You Win!'
-            document.getElementById("youWinText").innerHTML = winText
+            document.getElementById("numGuessRemainText").style.display = 'none';
+            document.getElementById("userGuessRemain").style.display = 'none';
+
+            var winText = 'You Win!';
+            document.getElementById("youWinText").innerHTML = winText;
             document.getElementById("playAgainButton").style.display = 'block';
         }
     }
@@ -67,25 +92,37 @@ document.onkeyup = function(userKeyStroke){
         document.getElementById("letter6").innerHTML = letterN;
         console.log('user typed n');
         correctGuessScore++;
+        console.log(correctGuessScore)
+
         if (correctGuessScore === 5){
-            var winText = 'You Win!'
-            document.getElementById("youWinText").innerHTML = winText
+            document.getElementById("numGuessRemainText").style.display = 'none';
+            document.getElementById("userGuessRemain").style.display = 'none';
+
+            var winText = 'You Win!';
+            document.getElementById("youWinText").innerHTML = winText;
             document.getElementById("playAgainButton").style.display = 'block';
         }
     }
 
     else {
         guessesRemaining--;
-        document.getElementById("userGuessesRemaining").innerHTML = guessesRemaining;
+        document.getElementById("userGuessRemain").innerHTML = guessesRemaining;
         console.log('user score goes down by 1 point');
+
         if (guessesRemaining === 0){
-            alert('Game Over!');
-            window.location.reload();
+            document.getElementById("numGuessRemainText").style.display = 'none';
+            document.getElementById("userGuessRemain").style.display = 'none';
+
+            var correctAnswer = 'Correct answer is Madonna';
+            document.getElementById("correctAnswerText").innerHTML = correctAnswer;
+            document.getElementById("playAgainButton").style.display = 'block';      
         }
     }
 }
 
-onclick
+function onClickReload() {
+    location.reload();
+}
 
 
 // This code will reload a page:

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Word Guess Game</title>
+    <title>80's Hangman</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -12,13 +12,15 @@
 
 <body>
     <div>
-        <h1>Guess The Word!</h1>
+        <h1>80's Hangman</h1>
     </div>
 
-    <div>Start game by typing a letter on the keyboard</div>
-    <br>
-    <div>Current Word</div>
-    <br>
+    <div>Press any key to start the game!</div>
+
+    <div>
+        <span id="question">Question</span>
+    </div>
+
     <div>
         <span id="letter1">_</span>
         <span id="letter2">_</span>
@@ -29,10 +31,23 @@
         <span id="letter7">_</span>
     </div>
 
+
     <div>
-        <p>Number of guesses remaining: 
-            <span id="userGuessesRemaining">15</span>
+        <p id="numGuessRemainText">Number of guesses remaining: 
+        <span id="userGuessRemain">5</span>
         </p>
+    </div>
+
+    <div>
+        <span id="youWinText"></span>
+    </div>
+
+    <div>
+        <span id="correctAnswerText"></span>
+    </div>
+    
+    <div id="playAgainButton">
+        <button onclick="onClickReload()">Click to play again</button>
     </div>
 
     <script src="assets/javascript/game.js"></script>
