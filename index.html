@@ -6,21 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>80's Hangman</title>
 
+    <!--Link to CSS-->
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
+    <!--Header-->
     <div>
         <h1>80's Music Hangman</h1>
     </div>
 
-    <div>Press any key to start the game!</div>
+    <!--Audio Files-->
+    <audio id="music1">
+        <source src="MadonnaLikeAVirgin.mp3" type="audio/mpeg">
+    </audio>
 
+    <!--Audio Pause Button-->
+    <button onclick="pauseAudio()" type="button">Pause Audio</button> 
+
+    <!--Instructions to get started-->
+    <div>Start the game by typing your first letter choice!</div>
+
+    <!--Question Container-->
     <div>
-        <span id="question">Question</span>
+        <span id="question"></span>
     </div>
 
+    <!--Correct Letters Container-->
     <div>
         <span id="letter01">_</span>
         <span id="letter02">_</span>
@@ -39,7 +52,7 @@
         <span id="letter15">_</span>
     </div>
 
-
+    <!--Letters Already Guessed Container-->
     <div>Letters Already Guessed:
         <span id="lag01"></span>
         <span id="lag02"></span>
@@ -69,25 +82,29 @@
         <span id="lag26"></span>
     </div>
 
-
+    <!--Number Of Guesses Remaining Container-->
     <div>
         <p id="numGuessRemainText">Number of guesses remaining: 
         <span id="userGuessRemain">9</span>
         </p>
     </div>
 
+    <!--You Win! Text Container-->
     <div>
         <span id="youWinText"></span>
     </div>
 
+    <!--Correct Answer Text Container-->
     <div>
         <span id="correctAnswerText"></span>
     </div>
     
+    <!--Play Again Button Container-->
     <div id="playAgainButton">
         <button onclick="onClickReload()">Click to play again</button>
     </div>
 
-    <script src="assets/javascript/game.js"></script>
+    <!--Link to JavaScript-->
+    <script src="game.js"></script>
 </body>
 </html>
