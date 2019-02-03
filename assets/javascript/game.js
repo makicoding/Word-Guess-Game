@@ -1,63 +1,53 @@
-// ASSIGN VALUES TO EACH GAME
-var gameOptions = ["game2"];
+// Values assigned to each game
+var gameOptions = ["game1"];
 //, "game2", "game3", "game4", "game5"
 
 
-// USE RANDOM NUMBER GENERATOR TO PICK A GAME
+// Random Number Generator to pick a game
 var gamePick = gameOptions[Math.floor(Math.random() * gameOptions.length)];
 
-/*
 
-// THIS CODE NEEDS WORK
 // GAME 1
+
 if (gamePick === "game1") {
 
     // Initial variables
-    var correctLetter01 = false;
-    var correctLetter02 = false;
-    var correctLetter03 = false;
+    var correctGuess1 = false;
+    console.log(correctGuess1)
 
-    var x = 0
+    var correctGuess2 = false;
+    console.log(correctGuess2)
 
-    if (correctLetter01 = true){
-        x = 1;
-        console.log(x);
-    }
+    var correctGuess3 = false;
+    console.log(correctGuess2)
 
-    var y = 0
+    var correctGuess4 = false;
+    console.log(correctGuess2)
 
-    if (correctLetter02 = true){
-        y = 1;
-        console.log(y);
-    }
-
-    var z = 0
-
-    if (z = true){
-        y = 1;
-        console.log(y);
-    }
-
-    var winningScore = x + y + z;
+    var correctGuess5 = false;
+    console.log(correctGuess2)
 
 
-    if (winningScore = 3){
-        document.getElementById("numGuessRemainText").style.display = 'none';
-        document.getElementById("userGuessRemain").style.display = 'none';
+    var correctGuessScore = false;
 
-        var winText = 'You Win!';
-        document.getElementById("youWinText").innerHTML = winText;
-        document.getElementById("playAgainButton").style.display = 'block';
-
-
+    
     var guessesRemaining = 9;
+    
 
-    // Letter placeholders that are not necessary 
+
+    // Correct Letter placeholders that are not necessary 
     // for this game and therefore removed
-    document.getElementById("letter04").style.display = 'none';
-    document.getElementById("letter05").style.display = 'none';
-    document.getElementById("letter06").style.display = 'none';
-    document.getElementById("letter07").style.display = 'none';
+    // (this game has a maximum of 15 letters available for the
+    // correct word, however more can be just added on in the
+    // html and javascript as necessary)
+    // (ones that are necessary are commented out)
+    //document.getElementById("letter01").style.display = 'none';
+    //document.getElementById("letter02").style.display = 'none';
+    //document.getElementById("letter03").style.display = 'none';
+    //document.getElementById("letter04").style.display = 'none';
+    //document.getElementById("letter05").style.display = 'none';
+    //document.getElementById("letter06").style.display = 'none';
+    //document.getElementById("letter07").style.display = 'none';
     document.getElementById("letter08").style.display = 'none';
     document.getElementById("letter09").style.display = 'none';
     document.getElementById("letter10").style.display = 'none';
@@ -67,113 +57,60 @@ if (gamePick === "game1") {
     document.getElementById("letter14").style.display = 'none';
     document.getElementById("letter15").style.display = 'none';
 
-    // Play Again Button hidden initially
-    document.getElementById("playAgainButton").style.display = 'none';
-
-    // Question
-    document.getElementById("question").innerHTML = 'Who sang Like a Virgin?';
-
-    // This function begins the game when 
-    // the user presses a key on their keyboard
-    document.onkeyup = function(userKeyStroke){
-
-        // This determines which key the user pressed on their keyboard
-        var userChoice = userKeyStroke.key;
-        
-        if (userChoice === "m"){
-            var letterM = 'M';
-            document.getElementById("letter01").innerHTML = letterM;
-            console.log('user typed m');
-            correctLetter01 = true;
-            console.log(correctLetter01);
-            }
-        }
-
-        else if (userChoice === "a"){
-            var letterA = 'A';
-            document.getElementById("letter02").innerHTML = letterA;
-            document.getElementById("letter07").innerHTML = letterA;
-            console.log('user typed a');
-            correctLetter02 = true;
-            console.log(correctLetter02);
-            }
-        }
-
-        else if (userChoice === "d"){
-            var letterD = 'D';
-            document.getElementById("letter03").innerHTML = letterD;
-            console.log('user typed d');
-            correctLetter03 = true;
-            console.log(correctLetter03);
-            }
-        }
-    }
-
-    function onClickReload() {
-        location.reload();
-    }
-}
-
-*/
 
 
-
-// CODE I AM WORKING ON NOW
-
-// GAME 2
-
-if (gamePick === "game2") {
-
-            // Initial variables
-            var correctGuess1 = false;
-            console.log(correctGuess1)
-        
-            var correctGuess2 = false;
-            console.log(correctGuess2)
-        
-            var correctGuess3 = false;
-            console.log(correctGuess2)
-        
-            var correctGuess4 = false;
-            console.log(correctGuess2)
-        
-            var correctGuess5 = false;
-            console.log(correctGuess2)
-        
-        
-            var correctGuessScore = false;
-
-    
-    var guessesRemaining = 9;
-    
-    // Letter placeholders that are not necessary 
+        // Incorrect Letter placeholders that are not necessary 
     // for this game and therefore removed
-    document.getElementById("letter08").style.display = 'none';
-    document.getElementById("letter09").style.display = 'none';
-    document.getElementById("letter10").style.display = 'none';
-    document.getElementById("letter11").style.display = 'none';
-    document.getElementById("letter12").style.display = 'none';
-    document.getElementById("letter13").style.display = 'none';
-    document.getElementById("letter14").style.display = 'none';
-    document.getElementById("letter15").style.display = 'none';
-    
+    // (corresponding letters on the right)
+    // (incorrect letters of the word are commented out)
+    document.getElementById("lag01").style.display = 'none';    // A
+    //document.getElementById("lag02").style.display = 'none';    // B
+    //document.getElementById("lag03").style.display = 'none';    // C
+    document.getElementById("lag04").style.display = 'none';    // D
+    //document.getElementById("lag05").style.display = 'none';    // E
+    //document.getElementById("lag06").style.display = 'none';    // F
+    //document.getElementById("lag07").style.display = 'none';    // G
+    //document.getElementById("lag08").style.display = 'none';    // H
+    //document.getElementById("lag09").style.display = 'none';    // I
+    //document.getElementById("lag10").style.display = 'none';    // J
+    //document.getElementById("lag11").style.display = 'none';    // K
+    //document.getElementById("lag12").style.display = 'none';    // L
+    document.getElementById("lag13").style.display = 'none';    // M
+    document.getElementById("lag14").style.display = 'none';    // N
+    document.getElementById("lag15").style.display = 'none';    // O
+    //document.getElementById("lag16").style.display = 'none';    // P
+    //document.getElementById("lag17").style.display = 'none';    // Q
+    //document.getElementById("lag18").style.display = 'none';    // R
+    //document.getElementById("lag19").style.display = 'none';    // S
+    //document.getElementById("lag20").style.display = 'none';    // T
+    //document.getElementById("lag21").style.display = 'none';    // U
+    //document.getElementById("lag22").style.display = 'none';    // V
+    //document.getElementById("lag23").style.display = 'none';    // W
+    //document.getElementById("lag24").style.display = 'none';    // X
+    //document.getElementById("lag25").style.display = 'none';    // Y
+    //document.getElementById("lag26").style.display = 'none';    // Z
+
+
+
     // Play Again Button hidden initially
     document.getElementById("playAgainButton").style.display = 'none';
     
+
     // Question
-    document.getElementById("question").innerHTML = 'THIS IS GAME 2: Which artist sang Like A Virgin?';
+    document.getElementById("question").innerHTML = 'Which artist sang the song Like A Virgin?';
     
+
+
     // This function begins the game when 
     // the user presses a key on their keyboard
     document.onkeyup = function(userKeyStroke){
                 
         // This determines which key the user pressed on their keyboard
-
-        
-
         var userChoice = userKeyStroke.key;
         
-        if (userChoice === "m"){
+
+        // Letters in the word
+        if ((userChoice === "m") || (userChoice === "M")){
             var letterM = 'M';
             document.getElementById("letter01").innerHTML = letterM;
             console.log('user typed m');
@@ -181,7 +118,7 @@ if (gamePick === "game2") {
             console.log(correctGuess1);
         }
     
-        else if (userChoice === "a"){
+        else if ((userChoice === "a") || (userChoice === "A")){
             var letterA = 'A';
             document.getElementById("letter02").innerHTML = letterA;
             document.getElementById("letter07").innerHTML = letterA;
@@ -190,7 +127,7 @@ if (gamePick === "game2") {
             console.log(correctGuess2)
         }
     
-        else if (userChoice === "d"){
+        else if ((userChoice === "d") || (userChoice === "D")){
             var letterD = 'D';
             document.getElementById("letter03").innerHTML = letterD;
             console.log('user typed d');
@@ -198,7 +135,7 @@ if (gamePick === "game2") {
             console.log(correctGuess3)
         }
     
-        else if (userChoice === "o"){
+        else if ((userChoice === "o") || (userChoice === "O")){
             var letterO = 'O';
             document.getElementById("letter04").innerHTML = letterO;
             console.log('user typed o');
@@ -206,7 +143,7 @@ if (gamePick === "game2") {
             console.log(correctGuess4)
         }
     
-        else if (userChoice === "n"){
+        else if ((userChoice === "n") || (userChoice === "N")){
             var letterN = 'N';
             document.getElementById("letter05").innerHTML = letterN;
             document.getElementById("letter06").innerHTML = letterN;
@@ -216,132 +153,149 @@ if (gamePick === "game2") {
         } 
     
 
-        if ((userChoice === 'b') || (userChoice === 'c') ||) {
-
-
-
-        }
-
-
-var wrongEntry = [];
-        wrongEntry.push(userChoice.toUpperCase() + " ");
-
-
-        document.getElementById("lag01").innerHTML = wrongEntry;
-
-
-
+        // Letters not in the word
         else {
             guessesRemaining--;
             document.getElementById("userGuessRemain").innerHTML = guessesRemaining;
             console.log('user score goes down by 1 point');
             
-            if (userChoice === "b"){
+            // Letters in the word are commented out
+            //if ((userChoice === "a") || (userChoice === "A")){
+            //var letterA = 'A';
+            //document.getElementById("lag01").innerHTML = letterA;
+            //}
+
+            if ((userChoice === "b") || (userChoice === "B")){
             var letterB = 'B';
-            document.getElementById("lag01").innerHTML = letterB;
+            document.getElementById("lag02").innerHTML = letterB;
+            }
+
+            if ((userChoice === "c") || (userChoice === "C")){
+            var letterC = 'C';
+            document.getElementById("lag03").innerHTML = letterC;
             }
             
-            else if (userChoice === "c"){
-            var letterC = 'C';
-            document.getElementById("lag02").innerHTML = letterC;
-            }
+            //if ((userChoice === "d") || (userChoice === "D")){
+            //var letterD = 'D';
+            //document.getElementById("lag04").innerHTML = letterD;
+            //}
 
-            else if (userChoice === "e"){
+            if ((userChoice === "e") || (userChoice === "E")){
             var letterE = 'E';
-            document.getElementById("lag03").innerHTML = letterE;
+            document.getElementById("lag05").innerHTML = letterE;
             }
 
-            else if (userChoice === "f"){
+            if ((userChoice === "f") || (userChoice === "F")){
             var letterF = 'F';
-            document.getElementById("lag04").innerHTML = letterF;
+            document.getElementById("lag06").innerHTML = letterF;
             }
 
-            else if (userChoice === "g"){
+            if ((userChoice === "g") || (userChoice === "G")){
             var letterG = 'G';
-            document.getElementById("lag05").innerHTML = letterG;
+            document.getElementById("lag07").innerHTML = letterG;
             }
 
-            else if (userChoice === "h"){
+            if ((userChoice === "h") || (userChoice === "H")){
             var letterH = 'H';
-            document.getElementById("lag06").innerHTML = letterH;
+            document.getElementById("lag08").innerHTML = letterH;
             }
 
-            else if (userChoice === "i"){
+            if ((userChoice === "i") || (userChoice === "I")){
             var letterI = 'I';
-            document.getElementById("lag07").innerHTML = letterI;
+            document.getElementById("lag09").innerHTML = letterI;
             }
 
-            else if (userChoice === "j"){
+            if ((userChoice === "j") || (userChoice === "J")){
             var letterJ = 'J';
-            document.getElementById("lag08").innerHTML = letterJ;
+            document.getElementById("lag10").innerHTML = letterJ;
             }
 
-            else if (userChoice === "k"){
+            if ((userChoice === "k") || (userChoice === "K")){
             var letterK = 'K';
-            document.getElementById("lag09").innerHTML = letterK;
+            document.getElementById("lag11").innerHTML = letterK;
             }
 
-            else if (userChoice === "l"){
+            if ((userChoice === "l") || (userChoice === "L")){
             var letterL = 'L';
-            document.getElementById("lag10").innerHTML = letterL;
+            document.getElementById("lag12").innerHTML = letterL;
             }
 
-            else if (userChoice === "p"){
+            //if ((userChoice === "m") || (userChoice === "M")){
+            //var letterM = 'M';
+            //document.getElementById("lag13").innerHTML = letterM;
+            //}
+
+            //if ((userChoice === "n") || (userChoice === "N")){
+            //var letterN = 'N';
+            //document.getElementById("lag14").innerHTML = letterN;
+            //}
+
+            //if ((userChoice === "o") || (userChoice === "O")){
+            //var letterO = 'O';
+            //document.getElementById("lag15").innerHTML = letterO;
+            //}
+
+            if ((userChoice === "p") || (userChoice === "P")){
             var letterP = 'P';
-            document.getElementById("lag11").innerHTML = letterP;
+            document.getElementById("lag16").innerHTML = letterP;
             }
 
-            else if (userChoice === "q"){
+            if ((userChoice === "q") || (userChoice === "Q")){
             var letterQ = 'Q';
-            document.getElementById("lag12").innerHTML = letterQ;
+            document.getElementById("lag17").innerHTML = letterQ;
             }
 
-            else if (userChoice === "r"){
+            if ((userChoice === "r") || (userChoice === "R")){
             var letterR = 'R';
-            document.getElementById("lag13").innerHTML = letterR;
+            document.getElementById("lag18").innerHTML = letterR;
             }
 
-            else if (userChoice === "s"){
+            if ((userChoice === "s") || (userChoice === "S")){
             var letterS = 'S';
-            document.getElementById("lag14").innerHTML = letterS;
+            document.getElementById("lag19").innerHTML = letterS;
             }
 
-            else if (userChoice === "t"){
+            if ((userChoice === "t") || (userChoice === "T")){
             var letterT = 'T';
-            document.getElementById("lag15").innerHTML = letterT;
+            document.getElementById("lag20").innerHTML = letterT;
             }
 
-            else if (userChoice === "u"){
+            if ((userChoice === "u") || (userChoice === "U")){
             var letterU = 'U';
-            document.getElementById("lag16").innerHTML = letterU;
+            document.getElementById("lag21").innerHTML = letterU;
             }
 
-            else if (userChoice === "v"){
+            if ((userChoice === "v") || (userChoice === "V")){
             var letterV = 'V';
-            document.getElementById("lag17").innerHTML = letterV;
+            document.getElementById("lag22").innerHTML = letterV;
             }
 
-            else if (userChoice === "w"){
+            if ((userChoice === "w") || (userChoice === "W")){
             var letterW = 'W';
-            document.getElementById("lag18").innerHTML = letterW;
+            document.getElementById("lag23").innerHTML = letterW;
             }
 
-            else if (userChoice === "x"){
+            if ((userChoice === "x") || (userChoice === "X")){
             var letterX = 'X';
-            document.getElementById("lag19").innerHTML = letterX;
+            document.getElementById("lag24").innerHTML = letterX;
             }
 
-            else if (userChoice === "y"){
+            if ((userChoice === "y") || (userChoice === "Y")){
             var letterY = 'Y';
-            document.getElementById("lag20").innerHTML = letterY;
+            document.getElementById("lag25").innerHTML = letterY;
             }
 
-            else if (userChoice === "z"){
+            if ((userChoice === "z") || (userChoice === "Z")){
             var letterZ = 'Z';
-            document.getElementById("lag21").innerHTML = letterZ;
+            document.getElementById("lag26").innerHTML = letterZ;
             }
         }
 
+
+
+        // If all correctly guessed letters occur, then 
+        // Number of guesses remaining text and user guesses remaining number disappears and 
+        // You win! text and Play Again button appears.
         if (correctGuess1 && correctGuess2 && correctGuess3 && correctGuess4 && correctGuess5){
             correctGuessScore = true;
             if (correctGuessScore === true){
@@ -353,8 +307,12 @@ var wrongEntry = [];
                 document.getElementById("playAgainButton").style.display = 'block';
             }
         }
+
         
-        // clean this up slightly so that I can use true false statements like the correctGuess Score
+
+        // If guesses remaining is zero, then
+        // Number of guesses remaining text and user guesses remaining number disappears and 
+        // Correct Answer and Play Again button appears.
         if (guessesRemaining === 0){
             document.getElementById("numGuessRemainText").style.display = 'none';
             document.getElementById("userGuessRemain").style.display = 'none';
@@ -362,525 +320,16 @@ var wrongEntry = [];
             var correctAnswer = 'Correct answer is Madonna';
             document.getElementById("correctAnswerText").innerHTML = correctAnswer;
             document.getElementById("playAgainButton").style.display = 'block';      
+            }
         }
-
-    }
-
-
-
-
-
-        
-
-    
+      
             
     
+    // When the Play Again button appears and is clicked, then the browser window refreshes.
     function onClickReload() {
         location.reload();
     }
 }
-
-
-
-// THIS CODE NOW WORKS WITH THE HELP OF HARRISON
-// GAME 2
-/*
-if (gamePick === "game2") {
-
-            // Initial variables
-            var correctGuess1 = false;
-            console.log(correctGuess1)
-        
-            var correctGuess2 = false;
-            console.log(correctGuess2)
-        
-            var correctGuess3 = false;
-            console.log(correctGuess2)
-        
-            var correctGuess4 = false;
-            console.log(correctGuess2)
-        
-            var correctGuess5 = false;
-            console.log(correctGuess2)
-        
-        
-            var correctGuessScore = false;
-
-    
-    var guessesRemaining = 9;
-    
-    // Letter placeholders that are not necessary 
-    // for this game and therefore removed
-    document.getElementById("letter08").style.display = 'none';
-    document.getElementById("letter09").style.display = 'none';
-    document.getElementById("letter10").style.display = 'none';
-    document.getElementById("letter11").style.display = 'none';
-    document.getElementById("letter12").style.display = 'none';
-    document.getElementById("letter13").style.display = 'none';
-    document.getElementById("letter14").style.display = 'none';
-    document.getElementById("letter15").style.display = 'none';
-    
-    // Play Again Button hidden initially
-    document.getElementById("playAgainButton").style.display = 'none';
-    
-    // Question
-    document.getElementById("question").innerHTML = 'THIS IS GAME 2: Which artist sang Like A Virgin?';
-    
-    // This function begins the game when 
-    // the user presses a key on their keyboard
-    document.onkeyup = function(userKeyStroke){
-                
-        // This determines which key the user pressed on their keyboard
-        var userChoice = userKeyStroke.key;
-        
-        if (userChoice === "m"){
-            var letterM = 'M';
-            document.getElementById("letter01").innerHTML = letterM;
-            console.log('user typed m');
-            correctGuess1 = true;
-            console.log(correctGuess1);
-        }
-    
-        else if (userChoice === "a"){
-            var letterA = 'A';
-            document.getElementById("letter02").innerHTML = letterA;
-            document.getElementById("letter07").innerHTML = letterA;
-            console.log('user typed a');
-            correctGuess2 = true;
-            console.log(correctGuess2)
-        }
-    
-        else if (userChoice === "d"){
-            var letterD = 'D';
-            document.getElementById("letter03").innerHTML = letterD;
-            console.log('user typed d');
-            correctGuess3 = true;
-            console.log(correctGuess3)
-        }
-    
-        else if (userChoice === "o"){
-            var letterO = 'O';
-            document.getElementById("letter04").innerHTML = letterO;
-            console.log('user typed o');
-            correctGuess4 = true;
-            console.log(correctGuess4)
-        }
-    
-        else if (userChoice === "n"){
-            var letterN = 'N';
-            document.getElementById("letter05").innerHTML = letterN;
-            document.getElementById("letter06").innerHTML = letterN;
-            console.log('user typed n');
-            correctGuess5 = true;
-            console.log(correctGuess5)
-        } 
-    
-        else {
-            guessesRemaining--;
-            document.getElementById("userGuessRemain").innerHTML = guessesRemaining;
-            console.log('user score goes down by 1 point');
-            
-            if (userChoice === "b"){
-            var letterB = 'B';
-            document.getElementById("lag01").innerHTML = letterB;
-            }
-            
-            else if (userChoice === "c"){
-            var letterC = 'C';
-            document.getElementById("lag02").innerHTML = letterC;
-            }
-
-            else if (userChoice === "e"){
-            var letterE = 'E';
-            document.getElementById("lag03").innerHTML = letterE;
-            }
-
-            else if (userChoice === "f"){
-            var letterF = 'F';
-            document.getElementById("lag04").innerHTML = letterF;
-            }
-
-            else if (userChoice === "g"){
-            var letterG = 'G';
-            document.getElementById("lag05").innerHTML = letterG;
-            }
-
-            else if (userChoice === "h"){
-            var letterH = 'H';
-            document.getElementById("lag06").innerHTML = letterH;
-            }
-
-            else if (userChoice === "i"){
-            var letterI = 'I';
-            document.getElementById("lag07").innerHTML = letterI;
-            }
-
-            else if (userChoice === "j"){
-            var letterJ = 'J';
-            document.getElementById("lag08").innerHTML = letterJ;
-            }
-
-            else if (userChoice === "k"){
-            var letterK = 'K';
-            document.getElementById("lag09").innerHTML = letterK;
-            }
-
-            else if (userChoice === "l"){
-            var letterL = 'L';
-            document.getElementById("lag10").innerHTML = letterL;
-            }
-
-            else if (userChoice === "p"){
-            var letterP = 'P';
-            document.getElementById("lag11").innerHTML = letterP;
-            }
-
-            else if (userChoice === "q"){
-            var letterQ = 'Q';
-            document.getElementById("lag12").innerHTML = letterQ;
-            }
-
-            else if (userChoice === "r"){
-            var letterR = 'R';
-            document.getElementById("lag13").innerHTML = letterR;
-            }
-
-            else if (userChoice === "s"){
-            var letterS = 'S';
-            document.getElementById("lag14").innerHTML = letterS;
-            }
-
-            else if (userChoice === "t"){
-            var letterT = 'T';
-            document.getElementById("lag15").innerHTML = letterT;
-            }
-
-            else if (userChoice === "u"){
-            var letterU = 'U';
-            document.getElementById("lag16").innerHTML = letterU;
-            }
-
-            else if (userChoice === "v"){
-            var letterV = 'V';
-            document.getElementById("lag17").innerHTML = letterV;
-            }
-
-            else if (userChoice === "w"){
-            var letterW = 'W';
-            document.getElementById("lag18").innerHTML = letterW;
-            }
-
-            else if (userChoice === "x"){
-            var letterX = 'X';
-            document.getElementById("lag19").innerHTML = letterX;
-            }
-
-            else if (userChoice === "y"){
-            var letterY = 'Y';
-            document.getElementById("lag20").innerHTML = letterY;
-            }
-
-            else if (userChoice === "z"){
-            var letterZ = 'Z';
-            document.getElementById("lag21").innerHTML = letterZ;
-            }
-        }
-
-        if (correctGuess1 && correctGuess2 && correctGuess3 && correctGuess4 && correctGuess5){
-            correctGuessScore = true;
-            if (correctGuessScore === true){
-                document.getElementById("numGuessRemainText").style.display = 'none';
-                document.getElementById("userGuessRemain").style.display = 'none';
-        
-                var winText = 'You Win!';
-                document.getElementById("youWinText").innerHTML = winText;
-                document.getElementById("playAgainButton").style.display = 'block';
-            }
-        }
-        
-        // clean this up slightly so that I can use true false statements like the correctGuess Score
-        if (guessesRemaining === 0){
-            document.getElementById("numGuessRemainText").style.display = 'none';
-            document.getElementById("userGuessRemain").style.display = 'none';
-    
-            var correctAnswer = 'Correct answer is Madonna';
-            document.getElementById("correctAnswerText").innerHTML = correctAnswer;
-            document.getElementById("playAgainButton").style.display = 'block';      
-        }
-
-    }
-
-
-
-
-
-        
-
-    
-            
-    
-    function onClickReload() {
-        location.reload();
-    }
-}
-
-*/
-
-
-
-/*
-// THIS CODE WORKS
-// GAME 3
-if (gamePick === "game3") {
-
-    // Initial variables
-    var correctGuessScore = 0;
-    console.log(correctGuessScore)
-    
-    var guessesRemaining = 9;
-    
-    // Letter placeholders that are not necessary 
-    // for this game and therefore removed
-    document.getElementById("letter08").style.display = 'none';
-    document.getElementById("letter09").style.display = 'none';
-    document.getElementById("letter10").style.display = 'none';
-    document.getElementById("letter11").style.display = 'none';
-    document.getElementById("letter12").style.display = 'none';
-    document.getElementById("letter13").style.display = 'none';
-    document.getElementById("letter14").style.display = 'none';
-    document.getElementById("letter15").style.display = 'none';
-    
-    // Play Again Button hidden initially
-    document.getElementById("playAgainButton").style.display = 'none';
-    
-    // Question
-    document.getElementById("question").innerHTML = 'THIS IS GAME 2: Who sang Like a Virgin?';
-    
-    // This function begins the game when 
-    // the user presses a key on their keyboard
-    document.onkeyup = function(userKeyStroke){
-    
-        // This determines which key the user pressed on their keyboard
-        var userChoice = userKeyStroke.key;
-        
-        if (userChoice === "m"){
-            var letterM = 'M';
-            document.getElementById("letter01").innerHTML = letterM;
-            console.log('user typed m');
-            correctGuessScore++;
-            console.log(correctGuessScore);
-    
-            if (correctGuessScore === 5){
-                document.getElementById("numGuessRemainText").style.display = 'none';
-                document.getElementById("userGuessRemain").style.display = 'none';
-    
-                var winText = 'You Win!';
-                document.getElementById("youWinText").innerHTML = winText;
-                document.getElementById("playAgainButton").style.display = 'block';
-            }
-        }
-    
-        else if (userChoice === "a"){
-            var letterA = 'A';
-            document.getElementById("letter02").innerHTML = letterA;
-            document.getElementById("letter07").innerHTML = letterA;
-            console.log('user typed a');
-            correctGuessScore++;
-            console.log(correctGuessScore)
-    
-            if (correctGuessScore === 5){
-                document.getElementById("numGuessRemainText").style.display = 'none';
-                document.getElementById("userGuessRemain").style.display = 'none';
-    
-                var winText = 'You Win!';
-                document.getElementById("youWinText").innerHTML = winText;
-                document.getElementById("playAgainButton").style.display = 'block';
-            }
-        }
-    
-        else if (userChoice === "d"){
-            var letterD = 'D';
-            document.getElementById("letter03").innerHTML = letterD;
-            console.log('user typed d');
-            correctGuessScore++;
-            console.log(correctGuessScore)
-    
-            if (correctGuessScore === 5){
-                document.getElementById("numGuessRemainText").style.display = 'none';
-                document.getElementById("userGuessRemain").style.display = 'none';
-    
-                var winText = 'You Win!';
-                document.getElementById("youWinText").innerHTML = winText;
-                document.getElementById("playAgainButton").style.display = 'block';
-            }
-        }
-    
-        else if (userChoice === "o"){
-            var letterO = 'O';
-            document.getElementById("letter04").innerHTML = letterO;
-            console.log('user typed o');
-            correctGuessScore++;
-            console.log(correctGuessScore)
-    
-            if (correctGuessScore === 5){
-                document.getElementById("numGuessRemainText").style.display = 'none';
-                document.getElementById("userGuessRemain").style.display = 'none';
-    
-                var winText = 'You Win!';
-                document.getElementById("youWinText").innerHTML = winText;
-                document.getElementById("playAgainButton").style.display = 'block';
-            }
-        }
-    
-        else if (userChoice === "n"){
-            var letterN = 'N';
-            document.getElementById("letter05").innerHTML = letterN;
-            document.getElementById("letter06").innerHTML = letterN;
-            console.log('user typed n');
-            correctGuessScore++;
-            console.log(correctGuessScore)
-    
-            if (correctGuessScore === 5){
-                document.getElementById("numGuessRemainText").style.display = 'none';
-                document.getElementById("userGuessRemain").style.display = 'none';
-    
-                var winText = 'You Win!';
-                document.getElementById("youWinText").innerHTML = winText;
-                document.getElementById("playAgainButton").style.display = 'block';
-            }
-        }
-    
-        else {
-            guessesRemaining--;
-            document.getElementById("userGuessRemain").innerHTML = guessesRemaining;
-            console.log('user score goes down by 1 point');
-            
-            if (userChoice === "b"){
-            var letterB = 'B';
-            document.getElementById("lag01").innerHTML = letterB;
-            }
-            
-            else if (userChoice === "c"){
-            var letterC = 'C';
-            document.getElementById("lag02").innerHTML = letterC;
-            }
-
-            else if (userChoice === "e"){
-            var letterE = 'E';
-            document.getElementById("lag03").innerHTML = letterE;
-            }
-
-            else if (userChoice === "f"){
-            var letterF = 'F';
-            document.getElementById("lag04").innerHTML = letterF;
-            }
-
-            else if (userChoice === "g"){
-            var letterG = 'G';
-            document.getElementById("lag05").innerHTML = letterG;
-            }
-
-            else if (userChoice === "h"){
-            var letterH = 'H';
-            document.getElementById("lag06").innerHTML = letterH;
-            }
-
-            else if (userChoice === "i"){
-            var letterI = 'I';
-            document.getElementById("lag07").innerHTML = letterI;
-            }
-
-            else if (userChoice === "j"){
-            var letterJ = 'J';
-            document.getElementById("lag08").innerHTML = letterJ;
-            }
-
-            else if (userChoice === "k"){
-            var letterK = 'K';
-            document.getElementById("lag09").innerHTML = letterK;
-            }
-
-            else if (userChoice === "l"){
-            var letterL = 'L';
-            document.getElementById("lag10").innerHTML = letterL;
-            }
-
-            else if (userChoice === "p"){
-            var letterP = 'P';
-            document.getElementById("lag11").innerHTML = letterP;
-            }
-
-            else if (userChoice === "q"){
-            var letterQ = 'Q';
-            document.getElementById("lag12").innerHTML = letterQ;
-            }
-
-            else if (userChoice === "r"){
-            var letterR = 'R';
-            document.getElementById("lag13").innerHTML = letterR;
-            }
-
-            else if (userChoice === "s"){
-            var letterS = 'S';
-            document.getElementById("lag14").innerHTML = letterS;
-            }
-
-            else if (userChoice === "t"){
-            var letterT = 'T';
-            document.getElementById("lag15").innerHTML = letterT;
-            }
-
-            else if (userChoice === "u"){
-            var letterU = 'U';
-            document.getElementById("lag16").innerHTML = letterU;
-            }
-
-            else if (userChoice === "v"){
-            var letterV = 'V';
-            document.getElementById("lag17").innerHTML = letterV;
-            }
-
-            else if (userChoice === "w"){
-            var letterW = 'W';
-            document.getElementById("lag18").innerHTML = letterW;
-            }
-
-            else if (userChoice === "x"){
-            var letterX = 'X';
-            document.getElementById("lag19").innerHTML = letterX;
-            }
-
-            else if (userChoice === "y"){
-            var letterY = 'Y';
-            document.getElementById("lag20").innerHTML = letterY;
-            }
-
-            else if (userChoice === "z"){
-            var letterZ = 'Z';
-            document.getElementById("lag21").innerHTML = letterZ;
-            }
-
-            // an alert for an invalid entry like numbers
-
-            if (guessesRemaining === 0){
-                document.getElementById("numGuessRemainText").style.display = 'none';
-                document.getElementById("userGuessRemain").style.display = 'none';
-    
-                var correctAnswer = 'Correct answer is Madonna';
-                document.getElementById("correctAnswerText").innerHTML = correctAnswer;
-                document.getElementById("playAgainButton").style.display = 'block';      
-            }
-        }
-    }
-    
-    function onClickReload() {
-        location.reload();
-    }
-
-}
-*/
-
-
 
 
 
