@@ -1,5 +1,5 @@
 // Values assigned to each game
-var gameOptions = ["game03"];
+var gameOptions = ["game01"];
 //"game01", "game02", "game03", "game04", "game05", "game06", "game07", "game08", "game09", "game10"
 
 // Random Number Generator to pick a game
