@@ -701,7 +701,6 @@ if (gamePick === "game02") {
     }
 }
 
-//////////// RESUME WORKING FROM HERE
 // GAME 03
 if (gamePick === "game03") {
 
@@ -1081,6 +1080,7 @@ if (gamePick === "game03") {
     }
 }
 
+//////////// RESUME WORKING FROM HERE
 // GAME 04
 if (gamePick === "game04") {
 
