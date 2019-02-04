@@ -1,6 +1,6 @@
 // Values assigned to each game
-var gameOptions = ["game01", "game02"];
-//, "game02", "game03", "game04", "game05", "game06", "game07", "game08", "game09", "game10"
+var gameOptions = ["game03"];
+//"game01", "game02", "game03", "game04", "game05", "game06", "game07", "game08", "game09", "game10"
 
 // Random Number Generator to pick a game
 var gamePick = gameOptions[Math.floor(Math.random() * gameOptions.length)];
@@ -734,6 +734,18 @@ if (gamePick === "game03") {
     var correctGuess5 = false;
     console.log(correctGuess5)
 
+    var correctGuess6 = false;
+    console.log(correctGuess6)
+
+    var correctGuess7 = false;
+    console.log(correctGuess7)
+
+    var correctGuess8 = false;
+    console.log(correctGuess8)
+
+    var correctGuess9 = false;
+    console.log(correctGuess9)
+
 
     var correctGuessScore = false;
 
@@ -755,8 +767,8 @@ if (gamePick === "game03") {
     //document.getElementById("letter05").style.display = 'none';
     //document.getElementById("letter06").style.display = 'none';
     //document.getElementById("letter07").style.display = 'none';
-    document.getElementById("letter08").style.display = 'none';
-    document.getElementById("letter09").style.display = 'none';
+    //document.getElementById("letter08").style.display = 'none';
+    //document.getElementById("letter09").style.display = 'none';
     document.getElementById("letter10").style.display = 'none';
     document.getElementById("letter11").style.display = 'none';
     document.getElementById("letter12").style.display = 'none';
@@ -774,23 +786,23 @@ if (gamePick === "game03") {
     document.getElementById("lag01").style.display = 'none';    // A
     //document.getElementById("lag02").style.display = 'none';    // B
     //document.getElementById("lag03").style.display = 'none';    // C
-    document.getElementById("lag04").style.display = 'none';    // D
-    //document.getElementById("lag05").style.display = 'none';    // E
+    //document.getElementById("lag04").style.display = 'none';    // D
+    document.getElementById("lag05").style.display = 'none';    // E
     //document.getElementById("lag06").style.display = 'none';    // F
     //document.getElementById("lag07").style.display = 'none';    // G
-    //document.getElementById("lag08").style.display = 'none';    // H
-    //document.getElementById("lag09").style.display = 'none';    // I
+    document.getElementById("lag08").style.display = 'none';    // H
+    document.getElementById("lag09").style.display = 'none';    // I
     //document.getElementById("lag10").style.display = 'none';    // J
     //document.getElementById("lag11").style.display = 'none';    // K
     //document.getElementById("lag12").style.display = 'none';    // L
     document.getElementById("lag13").style.display = 'none';    // M
-    document.getElementById("lag14").style.display = 'none';    // N
+    //document.getElementById("lag14").style.display = 'none';    // N
     document.getElementById("lag15").style.display = 'none';    // O
     //document.getElementById("lag16").style.display = 'none';    // P
     //document.getElementById("lag17").style.display = 'none';    // Q
-    //document.getElementById("lag18").style.display = 'none';    // R
-    //document.getElementById("lag19").style.display = 'none';    // S
-    //document.getElementById("lag20").style.display = 'none';    // T
+    document.getElementById("lag18").style.display = 'none';    // R
+    document.getElementById("lag19").style.display = 'none';    // S
+    document.getElementById("lag20").style.display = 'none';    // T
     //document.getElementById("lag21").style.display = 'none';    // U
     //document.getElementById("lag22").style.display = 'none';    // V
     //document.getElementById("lag23").style.display = 'none';    // W
@@ -805,7 +817,7 @@ if (gamePick === "game03") {
     
 
     // Question
-    document.getElementById("question").innerHTML = 'Which Artist performed the song Like A Virgin?';
+    document.getElementById("question").innerHTML = 'Which Artist performed the song Dude (Looks Like A Lady)?';
     
 
 
@@ -818,27 +830,26 @@ if (gamePick === "game03") {
         
 
         // Letters in the word
-        if ((userChoice === "m") || (userChoice === "M")){
-            var letterM = 'M';
-            document.getElementById("letter01").innerHTML = letterM;
-            console.log('user typed m');
+        if ((userChoice === "a") || (userChoice === "A")){
+            var letterA = 'A';
+            document.getElementById("letter01").innerHTML = letterA;
+            console.log('user typed a');
             correctGuess1 = true;
             console.log(correctGuess1);
         }
     
-        else if ((userChoice === "a") || (userChoice === "A")){
-            var letterA = 'A';
-            document.getElementById("letter02").innerHTML = letterA;
-            document.getElementById("letter07").innerHTML = letterA;
-            console.log('user typed a');
+        else if ((userChoice === "e") || (userChoice === "E")){
+            var letterE = 'E';
+            document.getElementById("letter02").innerHTML = letterE;
+            console.log('user typed e');
             correctGuess2 = true;
             console.log(correctGuess2)
         }
     
-        else if ((userChoice === "d") || (userChoice === "D")){
-            var letterD = 'D';
-            document.getElementById("letter03").innerHTML = letterD;
-            console.log('user typed d');
+        else if ((userChoice === "r") || (userChoice === "R")){
+            var letterR = 'R';
+            document.getElementById("letter03").innerHTML = letterR;
+            console.log('user typed r');
             correctGuess3 = true;
             console.log(correctGuess3)
         }
@@ -851,15 +862,46 @@ if (gamePick === "game03") {
             console.log(correctGuess4)
         }
     
-        else if ((userChoice === "n") || (userChoice === "N")){
-            var letterN = 'N';
-            document.getElementById("letter05").innerHTML = letterN;
-            document.getElementById("letter06").innerHTML = letterN;
-            console.log('user typed n');
+        else if ((userChoice === "s") || (userChoice === "S")){
+            var letterS = 'S';
+            document.getElementById("letter05").innerHTML = letterS;
+            console.log('user typed s');
             correctGuess5 = true;
             console.log(correctGuess5)
         } 
     
+        else if ((userChoice === "m") || (userChoice === "M")){
+            var letterM = 'M';
+            document.getElementById("letter06").innerHTML = letterM;
+            console.log('user typed m');
+            correctGuess6 = true;
+            console.log(correctGuess6)
+        } 
+
+        else if ((userChoice === "i") || (userChoice === "I")){
+            var letterI = 'I';
+            document.getElementById("letter07").innerHTML = letterI;
+            console.log('user typed i');
+            correctGuess7 = true;
+            console.log(correctGuess7)
+        } 
+
+        else if ((userChoice === "t") || (userChoice === "T")){
+            var letterT = 'T';
+            document.getElementById("letter08").innerHTML = letterT;
+            console.log('user typed t');
+            correctGuess8 = true;
+            console.log(correctGuess8)
+        } 
+
+        else if ((userChoice === "h") || (userChoice === "H")){
+            var letterH = 'H';
+            document.getElementById("letter09").innerHTML = letterH;
+            console.log('user typed h');
+            correctGuess9 = true;
+            console.log(correctGuess9)
+        } 
+
 
         // Letters not in the word
         else {
@@ -883,15 +925,15 @@ if (gamePick === "game03") {
             document.getElementById("lag03").innerHTML = letterC;
             }
             
-            //if ((userChoice === "d") || (userChoice === "D")){
-            //var letterD = 'D';
-            //document.getElementById("lag04").innerHTML = letterD;
-            //}
-
-            if ((userChoice === "e") || (userChoice === "E")){
-            var letterE = 'E';
-            document.getElementById("lag05").innerHTML = letterE;
+            if ((userChoice === "d") || (userChoice === "D")){
+            var letterD = 'D';
+            document.getElementById("lag04").innerHTML = letterD;
             }
+
+            //if ((userChoice === "e") || (userChoice === "E")){
+            //var letterE = 'E';
+            //document.getElementById("lag05").innerHTML = letterE;
+            //}
 
             if ((userChoice === "f") || (userChoice === "F")){
             var letterF = 'F';
@@ -903,15 +945,15 @@ if (gamePick === "game03") {
             document.getElementById("lag07").innerHTML = letterG;
             }
 
-            if ((userChoice === "h") || (userChoice === "H")){
-            var letterH = 'H';
-            document.getElementById("lag08").innerHTML = letterH;
-            }
+            //if ((userChoice === "h") || (userChoice === "H")){
+            //var letterH = 'H';
+            //document.getElementById("lag08").innerHTML = letterH;
+            //}
 
-            if ((userChoice === "i") || (userChoice === "I")){
-            var letterI = 'I';
-            document.getElementById("lag09").innerHTML = letterI;
-            }
+            //if ((userChoice === "i") || (userChoice === "I")){
+            //var letterI = 'I';
+            //document.getElementById("lag09").innerHTML = letterI;
+            //}
 
             if ((userChoice === "j") || (userChoice === "J")){
             var letterJ = 'J';
@@ -933,10 +975,10 @@ if (gamePick === "game03") {
             //document.getElementById("lag13").innerHTML = letterM;
             //}
 
-            //if ((userChoice === "n") || (userChoice === "N")){
-            //var letterN = 'N';
-            //document.getElementById("lag14").innerHTML = letterN;
-            //}
+            if ((userChoice === "n") || (userChoice === "N")){
+            var letterN = 'N';
+            document.getElementById("lag14").innerHTML = letterN;
+            }
 
             //if ((userChoice === "o") || (userChoice === "O")){
             //var letterO = 'O';
@@ -953,20 +995,20 @@ if (gamePick === "game03") {
             document.getElementById("lag17").innerHTML = letterQ;
             }
 
-            if ((userChoice === "r") || (userChoice === "R")){
-            var letterR = 'R';
-            document.getElementById("lag18").innerHTML = letterR;
-            }
+            //if ((userChoice === "r") || (userChoice === "R")){
+            //var letterR = 'R';
+            //document.getElementById("lag18").innerHTML = letterR;
+            //}
 
-            if ((userChoice === "s") || (userChoice === "S")){
-            var letterS = 'S';
-            document.getElementById("lag19").innerHTML = letterS;
-            }
+            //if ((userChoice === "s") || (userChoice === "S")){
+            //var letterS = 'S';
+            //document.getElementById("lag19").innerHTML = letterS;
+            //}
 
-            if ((userChoice === "t") || (userChoice === "T")){
-            var letterT = 'T';
-            document.getElementById("lag20").innerHTML = letterT;
-            }
+            //if ((userChoice === "t") || (userChoice === "T")){
+            //var letterT = 'T';
+            //document.getElementById("lag20").innerHTML = letterT;
+            //}
 
             if ((userChoice === "u") || (userChoice === "U")){
             var letterU = 'U';
@@ -1004,7 +1046,7 @@ if (gamePick === "game03") {
         // If all correctly guessed letters occur, then 
         // Number of guesses remaining text and user guesses remaining number disappears and 
         // You win! text and Play Again button appears.
-        if (correctGuess1 && correctGuess2 && correctGuess3 && correctGuess4 && correctGuess5){
+        if (correctGuess1 && correctGuess2 && correctGuess3 && correctGuess4 && correctGuess5 && correctGuess6 && correctGuess7 && correctGuess8 && correctGuess9){
             correctGuessScore = true;
             if (correctGuessScore === true){
                 document.getElementById("numGuessRemainText").style.display = 'none';
@@ -1025,7 +1067,7 @@ if (gamePick === "game03") {
             document.getElementById("numGuessRemainText").style.display = 'none';
             document.getElementById("userGuessRemain").style.display = 'none';
     
-            var correctAnswer = 'Correct answer is Madonna';
+            var correctAnswer = 'Correct answer is Aerosmith';
             document.getElementById("correctAnswerText").innerHTML = correctAnswer;
             document.getElementById("playAgainButton").style.display = 'block';      
             }
