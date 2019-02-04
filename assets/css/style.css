@@ -1,3 +1,48 @@
+/* Background */
 body {
-    background-color: lightblue;
+    background-color: #001b2f;
+}
+
+/* Background Image */
+.backgroundImage {
+    /* width: 960px;
+    */
+    width: 1200px;
+
+    border: 4px solid #ffffff;
+
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    transform: translate(-600px, 0px);
+}
+
+/* ---------------------------------------- */
+/* Game Container */
+.gameOuterContainer {
+    width: 450px;
+    height: 320px;
+
+    padding: 10px;
+    border: 4px solid red;
+    margin: 0px;
+
+    background-color: #ffffff;
+
+    position: fixed;
+    top: 270px;
+    left: 50%;
+    transform: translate(-255px, 0px);
+
+}
+
+.header {
+    text-align: center;
+}
+
+.gameInnerContainer {
+    text-align: center;
+
+    position: relative;
+    top: 10px;
 }
