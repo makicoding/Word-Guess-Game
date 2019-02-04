@@ -1079,7 +1079,6 @@ if (gamePick === "game03") {
     }
 }
 
-//////////// RESUME WORKING FROM HERE
 // GAME 04
 if (gamePick === "game04") {
 
@@ -1163,7 +1162,7 @@ if (gamePick === "game04") {
     //document.getElementById("letter05").style.display = 'none';
     //document.getElementById("letter06").style.display = 'none';
     //document.getElementById("letter07").style.display = 'none';
-    document.getElementById("letter08").innerHTML = '---';
+    document.getElementById("letter08").innerHTML = '--';
     var space = document.getElementById("letter08");
     space.style.opacity = "0";
     //document.getElementById("letter09").style.display = 'none';
@@ -1598,13 +1597,13 @@ if (gamePick === "game05") {
     //document.getElementById("letter03").style.display = 'none';
     //document.getElementById("letter04").style.display = 'none';
     //document.getElementById("letter05").style.display = 'none';
-    document.getElementById("letter06").innerHTML = '---';
+    document.getElementById("letter06").innerHTML = '--';
     var space = document.getElementById("letter06");
     space.style.opacity = "0";
     //document.getElementById("letter07").style.display = 'none';
     //document.getElementById("letter08").style.display = 'none';
     //document.getElementById("letter09").style.display = 'none';
-    document.getElementById("letter10").innerHTML = '---';
+    document.getElementById("letter10").innerHTML = '--';
     var space = document.getElementById("letter10");
     space.style.opacity = "0";
     //document.getElementById("letter11").style.display = 'none';

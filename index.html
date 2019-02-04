@@ -51,15 +51,15 @@
             <div>Play audio for hint:</div>
 
             <!--Play Audio Button-->
-            <button onclick="playAudio()" type="button">Play Audio</button>
+            <button id="playAudioButton" onclick="playAudio()" type="button">Play Audio</button>
             
             <!--Pause Audio Button-->
-            <button onclick="pauseAudio()" type="button">Pause Audio</button> 
+            <button id="pauseAudioButton" onclick="pauseAudio()" type="button">Pause Audio</button> 
             <br>
             <br>
 
             <!--Correct Letters Container-->
-            <div>
+            <div id="correctLettersContainer">
                 <span id="letter01">_</span>
                 <span id="letter02">_</span>
                 <span id="letter03">_</span>
@@ -129,7 +129,7 @@
             
             <!--Play Again Button Container-->
             <div id="playAgainButton">
-                <button onclick="onClickReload()">Click to play again</button>
+                <button id ="playAgainBtn" onclick="onClickReload()">Click to play again</button>
             </div>
             <br>
         
