@@ -6,7 +6,7 @@ var gamePick = gameOptions[Math.floor(Math.random() * gameOptions.length)];
 
 
 
-// GAME 01
+// GAME 01      Madonna - Like a Virgin
 if (gamePick === "game01") {
 
     // Music controls
@@ -343,7 +343,7 @@ if (gamePick === "game01") {
     }
 }
 
-// GAME 02
+// GAME 02      Blondie - Call Me
 if (gamePick === "game02") {
 
     // Music controls
@@ -700,7 +700,7 @@ if (gamePick === "game02") {
     }
 }
 
-// GAME 03
+// GAME 03      Aerosmith - Dude Looks Like A Lady
 if (gamePick === "game03") {
 
     // Music controls
@@ -1079,7 +1079,7 @@ if (gamePick === "game03") {
     }
 }
 
-// GAME 04
+// GAME 04      Michael Jackson - Beat It
 if (gamePick === "game04") {
 
     // Music controls
@@ -1516,7 +1516,7 @@ if (gamePick === "game04") {
     }
 }
 
-// GAME 05
+// GAME 05      Eddie Van Halen - Hot For Teacher
 if (gamePick === "game05") {
 
     // Music controls
