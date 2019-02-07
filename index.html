@@ -30,6 +30,12 @@
         </div>
 
         <!--Audio Files-->
+        <!--
+        IT'S REALLY IMPORTANT NOT TO HAVE A SLASH / IN FRONT OF THE ASSETS FOLDER HERE (like /assets ) 
+        (JUST LIKE ALL THE OTHER PARTS OF THE HTML DOCUMENT).  IF YOU HAVE A SLASH / IN FRONT OF IT, WHEN YOU UPLOAD 
+        THE HTML TO THE SERVER, THE HTML WILL LOOK AT THE ROOT DIRECTORY (SLASH / MEANS ROOT DIRECTORY) AND SO THE HTML 
+        FILE WILL NOT PROPERLY REFERENCE THE ASSETS FOLDER NOR THE MP3 AUDIO FILE.
+        -->
         <audio id="music01"><source src="assets/music/MadonnaLikeAVirgin_1min_192kbps.mp3" type="audio/mpeg"></audio>
         <audio id="music02"><source src="assets/music/BlondieCallMe_1min_192kbps.mp3" type="audio/mpeg"></audio>
         <audio id="music03"><source src="assets/music/AerosmithDudeLooksLikeALady_1min30secs_192kbps.mp3" type="audio/mpeg"></audio>
