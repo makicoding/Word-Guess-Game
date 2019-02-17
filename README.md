@@ -14,4 +14,4 @@ Since this is a hangman game, a question will appear for the user to guess the w
 
 Within the 5 games are a 2 that have multiple words (one that is 2 words, and one that is 3 words) that are separated by a space between them.
 
-Music can be played or paused as a hint for the user for any particular game.
+Music can be played or paused as a hint for the user for any particular game. 
