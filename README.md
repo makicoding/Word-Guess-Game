@@ -1,4 +1,4 @@
-# Word-Guess-Game
+# Word Guess Game
 
 [Click here to view deployed game](https://makicoding.github.io/Word-Guess-Game/index.html)
 <br>
