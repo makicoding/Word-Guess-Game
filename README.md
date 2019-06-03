@@ -2,7 +2,13 @@
 
 [Click here to view deployed game](https://makicoding.github.io/Word-Guess-Game/index.html)
 <br>
+***
 
+Technologies used: HTML, CSS, JavaScript.
+<br></br>
+Game is designed for a laptop screen and larger. 
+
+***
 ### Welcome to Retro Diner's '80s Music Hangman game night!
 
 There are a total of 5 different games that will be selected at random.
@@ -18,3 +24,5 @@ Since this is a hangman game, a question will appear for the user to guess the w
 Within the 5 games are a 2 that have multiple words (one that is 2 words, and one that is 3 words) that are separated by a space between them.
 
 Music can be played or paused as a hint for the user for any particular game.
+
+![Screenshot](https://raw.githubusercontent.com/makicoding/Word-Guess-Game/master/screenshot/80sMusicHangman_Screenshot_01.png)
